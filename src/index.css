@@ -7,7 +7,7 @@
 }
 
 .main-section {
-  @apply max-w-6xl w-full h-screen m-auto flex flex-col items-center justify-center gap-y-4 text-white slide-up p-20 text-center
+  @apply max-w-[1500px] w-full m-auto flex flex-col items-center justify-center gap-y-4 text-white slide-up p-20 text-center
 }
 
 #hero {
@@ -35,9 +35,13 @@
 }
 
 .fade-in {
-  animation:fade-in 1s
+  animation:fade-in 0.5s
 }
 
 .slide-up {
-  animation:slide-up 1s
+  animation:slide-up 0.5s
+}
+
+.main-input {
+  @apply rounded-md py-3 px-4 max-w-[600px] w-full text-black
 }

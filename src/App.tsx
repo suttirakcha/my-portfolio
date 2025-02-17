@@ -1,12 +1,7 @@
 import Topbar from "./components/Topbar";
-import { lazy, Suspense, useEffect } from "react";
-
-import { useTransition } from "react";
+import { lazy, Suspense } from "react";
 
 function App() {
-
-  const [isPending, startTransition] = useTransition()
-
   const Hero = lazy(() => import('./components/Hero'))
   const AboutMe = lazy(() => import('./components/AboutMe'))
   const Projects = lazy(() => import('./components/Projects'))

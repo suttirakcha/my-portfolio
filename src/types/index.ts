@@ -16,3 +16,10 @@ export interface Menus {
   title: string
   id: string
 }
+
+export type AboutMeSec = 'About Me' | 'Skills' | 'Achievements' | string
+
+export type Skills = {
+  title: string;
+  level: "Beginner" | "Intermediate" | "Advanced"
+}

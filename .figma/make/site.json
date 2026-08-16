@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your web development skills and achievements with a modern portfolio featuring your bio, projects, certifications, skills, and languages.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

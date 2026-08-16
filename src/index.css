@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --color-border: var(--border);
+}
+
+:root {
+  --background: #0e0e0d;
+  --foreground: #ede8df;
+  --card: #161614;
+  --card-foreground: #ede8df;
+  --primary: #c8f0e0;
+  --primary-foreground: #0e0e0d;
+  --secondary: #1f1f1c;
+  --secondary-foreground: #a89f92;
+  --muted: #1a1a17;
+  --muted-foreground: #7a7469;
+  --accent: #87e0b8;
+  --accent-foreground: #0e0e0d;
+  --border: rgba(237, 232, 223, 0.08);
+  --ring: #87e0b8;
+  --radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}

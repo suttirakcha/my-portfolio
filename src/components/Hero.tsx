@@ -1,4 +1,4 @@
-import profileImg from "@/assets/suttirak-ch-profile-image.jpg";
+import profileImg from "../assets/suttirak-ch-profile-image.jpg";
 
 function Hero() {
   return (

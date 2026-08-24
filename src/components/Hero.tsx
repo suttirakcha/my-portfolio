@@ -1,6 +1,6 @@
 function Hero() {
   const profileImg = new URL(
-    "../assets/suttirak-ch-profile-image.jpg",
+    "../../public/suttirak-ch-profile-image.jpg",
     import.meta.url
   ).href;
   return (

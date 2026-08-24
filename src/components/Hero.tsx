@@ -1,6 +1,8 @@
-import profileImg from "/images/suttirak-ch-profile-image.jpg";
-
 function Hero() {
+  const profileImg = new URL(
+    "/images/suttirak-ch-profile-image.jpg",
+    import.meta.url
+  ).href;
   return (
     <section className="max-w-6xl mx-auto px-6 pt-32 pb-24 grid md:grid-cols-[1fr_auto] gap-16 items-start">
       <div className="flex flex-col gap-6">

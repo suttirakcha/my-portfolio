@@ -1,67 +1,33 @@
 function Hero() {
-  const profileImg = new URL(
-    "/images/suttirak-ch-profile-image.jpg",
-    import.meta.url
-  ).href;
+  // const profileImg = new URL(
+  //   "/images/suttirak-ch-profile-image.jpg",
+  //   import.meta.url
+  // ).href;
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-32 pb-24 grid md:grid-cols-[1fr_auto] gap-16 items-start">
+    <section className="max-w-6xl mx-auto px-6 pt-32 pb-24 flex flex-col-reverse max-md:items-center md:grid md:grid-cols-[1fr_auto] gap-16 items-start">
       <div className="flex flex-col gap-6">
-        <div className="flex items-center gap-3">
-          <span
-            style={{
-              backgroundColor: "var(--accent)",
-              color: "var(--accent-foreground)",
-              fontFamily: "var(--font-mono)",
-            }}
-            className="text-xs px-2.5 py-1 rounded-sm font-medium"
-          >
-            available for work
-          </span>
-          <span
-            style={{ color: "var(--muted-foreground)" }}
-            className="text-xs tracking-widest uppercase"
-          >
-            Based in Bangkok, Thailand
-          </span>
-        </div>
+        <span className="text-xs px-2.5 py-1 rounded-sm font-medium bg-accent text-accent-foreground font-mono w-fit">
+          available for work
+        </span>
 
-        <h1
-          style={{
-            fontFamily: "var(--font-display)",
-            color: "var(--foreground)",
-          }}
-          className="text-6xl md:text-7xl font-light leading-[0.95] tracking-tight"
-        >
-          Suttirak{" "}
-          <em
-            className="font-light not-italic"
-            style={{ color: "var(--accent)" }}
-          >
+        <h1 className="text-foreground font-display text-6xl md:text-7xl font-light leading-[0.95] tracking-tight">
+          Suttirak <span className="text-secondary-foreground">(Mark)</span>{" "}
+          <em className="font-light not-italic text-accent">
             Charoenrajabhakdi
           </em>
           <br />
-          <span
-            className="text-5xl md:text-6xl"
-            style={{ color: "var(--secondary-foreground)" }}
-          >
+          <span className="text-4xl md:text-5xl text-secondary-foreground">
             Full-Stack{" "}
           </span>
-          Developer
+          <span className="text-4xl md:text-5xl">Developer</span>
         </h1>
 
-        <p
-          style={{
-            color: "var(--muted-foreground)",
-            fontFamily: "var(--font-sans)",
-          }}
-          className="text-base leading-relaxed font-light"
-        >
-          A web developer with 3-year work experience creating e-commerce,
-          dashboard, and event booking applications. Combine frontend expertise
-          (React, Next.js, and TypeScript) with robust backend capabilities
-          (Nest.js, MongoDB, PostgreSQL) gained through advanced bootcamps,
-          proven abilities with cross-functional teams to translate
-          pixel-perfect Figma design into high-performance web applications
+        <p className="text-muted-foreground font-sans text-base leading-relaxed font-light">
+          Hi, I'm Suttirak Charoenrajabhakdi, you can call me{" "}
+          <strong className="font-bold text-secondary-foreground">Mark</strong>.
+          I had a 3-year experience in working as a frontend developer with the
+          focus of React, Next.js, and TypeScript and I've been building
+          AI-augmented full-stack web applications during AI era.
         </p>
 
         <div className="flex items-center gap-4 pt-2">
@@ -117,7 +83,7 @@ function Hero() {
       <div className="shrink-0">
         <div className="relative rounded-full overflow-hidden w-80 h-80 shadow-accent shadow-[0_0_40px_0px_var(--accent)]">
           <img
-            src={profileImg}
+            src="/images/suttirak-ch-profile-image.jpg"
             alt="Suttirak Charoenrajabhakdi, full-stack developer"
             className="w-full h-full"
           />

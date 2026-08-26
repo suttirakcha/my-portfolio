@@ -1,23 +1,19 @@
 const SPOKEN_LANGUAGES = [
   {
-    name: "Thai",
+    name: "Thai (ภาษาไทย)",
     level: "Native",
-    description: "Mother tongue",
   },
   {
     name: "English",
     level: "Fluent",
-    description: "Mainly used for working",
   },
   {
-    name: "Mandarin Chinese",
+    name: "Mandarin Chinese （中文）",
     level: "Intermediate",
-    description: "HSK4 - Score: 255/300",
   },
   {
-    name: "German",
+    name: "German (Deutsch)",
     level: "Beginner",
-    description: "Basic",
   },
 ];
 
@@ -47,12 +43,12 @@ function Languages() {
             className="flex items-center gap-4 px-5 py-4 rounded-sm bg-card border border-border"
           >
             <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-              <span className="font-medium text-foreground font-sans">
+              <span className="font-medium text-foreground font-sans text-lg">
                 {lang.name}
               </span>
-              <span className="text-sm text-muted-foreground font-sans">
+              {/* <span className="text-sm text-muted-foreground font-sans">
                 {lang.description}
-              </span>
+              </span> */}
             </div>
             <span
               style={{

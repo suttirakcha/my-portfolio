@@ -83,7 +83,7 @@ function Hero() {
       <div className="shrink-0">
         <div className="relative rounded-full overflow-hidden w-80 h-80 shadow-accent shadow-[0_0_40px_0px_var(--accent)]">
           <img
-            src={profileImg}
+            src="https://media.githubusercontent.com/media/suttirakcha/my-portfolio/main/src/assets/suttirak-ch-profile-image.jpg"
             alt="Suttirak Charoenrajabhakdi, full-stack developer"
             className="w-full h-full"
           />

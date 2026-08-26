@@ -1,10 +1,8 @@
-// import profileImg from "./suttirak-ch-profile-image.jpg";
-
 function Hero() {
-  // const profileImg = new URL(
-  //   "/assets/suttirak-ch-profile-image.jpg",
-  //   import.meta.url
-  // ).href;
+  const profileImg = new URL(
+    "../assets/suttirak-ch-profile-image.jpg",
+    import.meta.url
+  ).href;
   return (
     <section className="max-w-6xl mx-auto px-6 pt-32 pb-24 flex flex-col-reverse max-md:items-center md:grid md:grid-cols-[1fr_auto] gap-16 items-start">
       <div className="flex flex-col gap-6">
@@ -85,7 +83,7 @@ function Hero() {
       <div className="shrink-0">
         <div className="relative rounded-full overflow-hidden w-80 h-80 shadow-accent shadow-[0_0_40px_0px_var(--accent)]">
           <img
-            src={`./assets/suttirak-ch-profile-image.jpg`}
+            src={profileImg}
             alt="Suttirak Charoenrajabhakdi, full-stack developer"
             className="w-full h-full"
           />

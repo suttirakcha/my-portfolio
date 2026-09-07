@@ -30,26 +30,6 @@ function Hero() {
           AI-augmented full-stack web applications during AI era.
         </p>
 
-        <div className="flex items-center gap-4 pt-2">
-          <a
-            href="#projects"
-            className="bg-foreground text-background font-sans inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-sm hover:opacity-90 transition-opacity"
-          >
-            View projects
-          </a>
-          {/* <a
-            href="#"
-            style={{
-              borderColor: "var(--border)",
-              color: "var(--muted-foreground)",
-              fontFamily: "var(--font-sans)",
-            }}
-            className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-sm border hover:text-white transition-colors"
-          >
-            Download CV
-          </a> */}
-        </div>
-
         <div className="flex items-center gap-8 pt-4 border-t border-t-border">
           {[
             ["3+", "Years exp."],

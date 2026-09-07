@@ -46,9 +46,6 @@ function Languages() {
               <span className="font-medium text-foreground font-sans text-lg">
                 {lang.name}
               </span>
-              {/* <span className="text-sm text-muted-foreground font-sans">
-                {lang.description}
-              </span> */}
             </div>
             <span
               style={{

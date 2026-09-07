@@ -1,7 +1,7 @@
 const SKILL_CATEGORIES = [
   {
     category: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "TypeScript"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "TypeScript"],
   },
   {
     category: "Backend",

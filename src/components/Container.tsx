@@ -1,10 +1,10 @@
 import Certifications from "@/components/Certifications";
 import Divider from "@/components/Divider";
+import FadeUp from "@/components/FadeUp";
 import Hero from "@/components/Hero";
 import Languages from "@/components/Languages";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import { Fragment } from "react";
 
 function Container() {
   const components = [
@@ -19,10 +19,10 @@ function Container() {
       {components.map((comp, index) => {
         const isLastComp = components.length !== index + 1;
         return (
-          <Fragment>
+          <FadeUp delay={100}>
             {comp}
             {isLastComp && <Divider />}
-          </Fragment>
+          </FadeUp>
         );
       })}
     </main>

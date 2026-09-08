@@ -6,7 +6,7 @@ const PROJECTS = [
     tag: "Language Learning",
     year: "Jul 2026",
     description:
-      "Language learning app that transforms vocabulary acquisition and multilingual practice into an engaging, game-like experience",
+      "A language learning app that transforms vocabulary acquisition and multilingual practice into an engaging, game-like experience; the project is created using an AI tool of 'Lovable' and developed using React and TypeScript for the frontend development",
     stack: ["React", "TypeScript", "Lovable AI", "Supabase", "TanStack Query"],
     url: "https://reangan.app",
     image:
@@ -17,7 +17,7 @@ const PROJECTS = [
     tag: "Social Media",
     year: "Dec 2025",
     description:
-      "A full-stack social media application suitable for users who want to share experiences",
+      "A full-stack social media application suitable for users who want to share experiences via posting, join communites, and chat with others",
     stack: ["React", "TypeScript", "Next.js", "Nest.js", "MongoDB"],
     url: "https://afternune.vercel.app",
     image:

@@ -32,6 +32,10 @@ const SKILL_CATEGORIES = [
     category: "AI Coding Tools",
     skills: ["Lovable", "Claude", "Cursor"],
   },
+  {
+    category: "Soft Skills",
+    skills: ["Active learning", "Creativity", "Time management"],
+  },
 ];
 
 function Skills() {

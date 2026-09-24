@@ -77,42 +77,36 @@ function Navbar() {
         >
           <span
             style={{
-              backgroundColor: "var(--foreground)",
               transition:
                 "transform 0.25s cubic-bezier(0.4,0,0.2,1), top 0.25s cubic-bezier(0.4,0,0.2,1)",
-              position: "absolute",
               top: open ? "50%" : "calc(50% - 4px)",
               transform: open
                 ? "translateY(-50%) rotate(45deg)"
                 : "translateY(0) rotate(0deg)",
             }}
-            className="w-5 h-px block"
+            className="w-5 h-px block bg-foreground absolute"
           />
           <span
             style={{
-              backgroundColor: "var(--foreground)",
               transition:
                 "opacity 0.15s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)",
               opacity: open ? 0 : 1,
               transform: open ? "scaleX(0)" : "scaleX(1)",
-              position: "absolute",
               top: "50%",
               marginTop: "-0.5px",
             }}
-            className="w-5 h-px block"
+            className="w-5 h-px block bg-foreground absolute"
           />
           <span
             style={{
-              backgroundColor: "var(--foreground)",
               transition:
                 "transform 0.25s cubic-bezier(0.4,0,0.2,1), top 0.25s cubic-bezier(0.4,0,0.2,1)",
-              position: "absolute",
               top: open ? "50%" : "calc(50% + 4px)",
               transform: open
                 ? "translateY(-50%) rotate(-45deg)"
                 : "translateY(0) rotate(0deg)",
             }}
-            className="w-5 h-px block"
+            className="w-5 h-px block bg-foreground absolute"
           />
         </button>
       </div>

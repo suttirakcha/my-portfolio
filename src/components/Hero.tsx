@@ -1,8 +1,8 @@
 function Hero() {
-  const profileImg = new URL(
-    "../assets/suttirak-ch-profile-image.jpg",
-    import.meta.url
-  ).href;
+  const labels = [
+    ["3+", "Years exp."],
+    ["2", "Projects"],
+  ];
   return (
     <section className="max-w-6xl mx-auto px-6 pt-32 pb-24 flex flex-col-reverse max-md:items-center md:grid md:grid-cols-[1fr_auto] gap-16 items-start">
       <div className="flex flex-col gap-6">
@@ -31,27 +31,12 @@ function Hero() {
         </p>
 
         <div className="flex items-center gap-8 pt-4 border-t border-t-border">
-          {[
-            ["3+", "Years exp."],
-            ["2", "Projects"],
-          ].map(([num, label]) => (
+          {labels.map(([num, label]) => (
             <div key={label} className="flex flex-col gap-0.5">
-              <span
-                style={{
-                  fontFamily: "var(--font-display)",
-                  color: "var(--foreground)",
-                }}
-                className="text-2xl font-light"
-              >
+              <span className="text-2xl font-light font-display text-foreground">
                 {num}
               </span>
-              <span
-                style={{
-                  color: "var(--muted-foreground)",
-                  fontFamily: "var(--font-mono)",
-                }}
-                className="text-xs"
-              >
+              <span className="text-xs font-mono text-muted-foreground">
                 {label}
               </span>
             </div>

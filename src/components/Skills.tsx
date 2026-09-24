@@ -41,26 +41,11 @@ const SKILL_CATEGORIES = [
 function Skills() {
   return (
     <section id="skills" className="max-w-6xl mx-auto px-6 py-20">
-      <div
-        style={{
-          borderBottom: "1px solid var(--border)",
-          paddingBottom: "1.5rem",
-        }}
-        className="mb-12"
-      >
-        <p
-          style={{ color: "var(--accent)", fontFamily: "var(--font-mono)" }}
-          className="text-xs tracking-widest uppercase mb-2"
-        >
+      <div className="mb-12 border-b border-b-border pb-6">
+        <p className="text-xs tracking-widest uppercase mb-2 font-mono text-accent">
           Expertise
         </p>
-        <h2
-          style={{
-            fontFamily: "var(--font-display)",
-            color: "var(--foreground)",
-          }}
-          className="text-4xl font-light italic"
-        >
+        <h2 className="text-4xl font-light italic text-foreground font-display">
           Skills
         </h2>
       </div>
@@ -68,27 +53,14 @@ function Skills() {
       <div className="grid md:grid-cols-2 gap-8">
         {SKILL_CATEGORIES.map((cat) => (
           <div key={cat.category}>
-            <p
-              style={{
-                color: "var(--accent)",
-                fontFamily: "var(--font-mono)",
-                borderBottom: "1px solid var(--border)",
-              }}
-              className="text-xs tracking-widest uppercase pb-3 mb-5"
-            >
+            <p className="text-xs tracking-widest uppercase pb-3 mb-5 text-accent font-mono border-b border-b-border">
               {cat.category}
             </p>
             <div className="flex flex-wrap gap-2">
               {cat.skills.map((skill) => (
                 <span
                   key={skill}
-                  style={{
-                    backgroundColor: "var(--secondary)",
-                    color: "var(--secondary-foreground)",
-                    border: "1px solid var(--border)",
-                    fontFamily: "var(--font-sans)",
-                  }}
-                  className="text-sm px-3 py-1.5 rounded-sm hover:border-accent hover:text-white transition-colors cursor-default"
+                  className="text-sm px-3 py-1.5 rounded-sm hover:border-accent hover:text-white transition-colors cursor-default font-sans border border-border text-secondary-foreground bg-secondary"
                 >
                   {skill}
                 </span>

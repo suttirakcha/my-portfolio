@@ -37,10 +37,7 @@ function Certifications() {
   return (
     <section id="certifications" className="max-w-6xl mx-auto px-6 py-20">
       <div className="mb-12 pb-6 border-b border-b-border">
-        <p
-          style={{ color: "var(--accent)", fontFamily: "var(--font-mono)" }}
-          className="text-xs tracking-widest uppercase mb-2"
-        >
+        <p className="text-xs tracking-widest uppercase mb-2 font-mono text-accent">
           Credentials
         </p>
         <h2 className="text-4xl font-light italic font-display text-foreground">

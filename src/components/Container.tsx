@@ -19,7 +19,7 @@ function Container() {
       {components.map((comp, index) => {
         const isLastComp = components.length !== index + 1;
         return (
-          <FadeUp delay={100}>
+          <FadeUp delay={100} key={index}>
             {comp}
             {isLastComp && <Divider />}
           </FadeUp>

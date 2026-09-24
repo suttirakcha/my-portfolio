@@ -18,10 +18,7 @@ const links = [
 
 function Footer() {
   return (
-    <footer
-      style={{ borderTop: "1px solid var(--border)" }}
-      className="max-w-6xl mx-auto px-6 py-10 mt-8 flex flex-col md:flex-row items-center justify-between gap-4"
-    >
+    <footer className="max-w-6xl mx-auto px-6 py-10 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-t-border">
       <span
         style={{
           fontFamily: "var(--font-display)",

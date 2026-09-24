@@ -1,6 +1,4 @@
 import FadeUp from "@/components/FadeUp";
-import afternunePreview from "@/assets/afternune-preview.png";
-import reanganPreview from "@/assets/reangan-preview.png";
 import { useState } from "react";
 
 const PROJECTS = [
@@ -12,7 +10,8 @@ const PROJECTS = [
       "A language learning app that transforms vocabulary acquisition and multilingual practice into an engaging, game-like experience; the project is created using an AI tool of 'Lovable' and developed using React and TypeScript for the frontend development",
     stack: ["React", "TypeScript", "Lovable AI", "Supabase", "TanStack Query"],
     url: "https://reangan.app",
-    image: reanganPreview,
+    image:
+      "https://media.githubusercontent.com/media/suttirakcha/my-portfolio/main/src/assets/reangan-preview.png",
   },
   {
     title: "Afternune",
@@ -22,7 +21,8 @@ const PROJECTS = [
       "A full-stack social media application suitable for users who want to share experiences via posting, join communites, and chat with others",
     stack: ["React", "TypeScript", "Next.js", "Nest.js", "MongoDB"],
     url: "https://afternune.vercel.app",
-    image: afternunePreview,
+    image:
+      "https://media.githubusercontent.com/media/suttirakcha/my-portfolio/main/src/assets/afternune-preview.png",
   },
 ];
 
@@ -40,13 +40,7 @@ function Projects() {
               Projects
             </h2>
           </div>
-          <span
-            style={{
-              color: "var(--muted-foreground)",
-              fontFamily: "var(--font-mono)",
-            }}
-            className="text-xs"
-          >
+          <span className="text-xs font-mono text-muted-foreground">
             {PROJECTS.length} total
           </span>
         </div>
@@ -54,26 +48,26 @@ function Projects() {
 
       <FadeUp delay={100}>
         <div className="flex gap-2 mb-8 overflow-x-auto">
-          {PROJECTS.map((p, i) => (
-            <button
-              key={p.title}
-              onClick={() => setActive(i)}
-              style={{
-                backgroundColor:
-                  active === i ? "var(--foreground)" : "var(--secondary)",
-                color:
-                  active === i
-                    ? "var(--background)"
-                    : "var(--muted-foreground)",
-                fontFamily: "var(--font-mono)",
-                border: "none",
-                flexShrink: 0,
-              }}
-              className="text-xs px-4 py-2 rounded-sm transition-all duration-200 hover:opacity-90"
-            >
-              {p.title}
-            </button>
-          ))}
+          {PROJECTS.map((p, i) => {
+            const handleSetActive = () => setActive(i);
+            return (
+              <button
+                key={p.title}
+                onClick={handleSetActive}
+                style={{
+                  backgroundColor:
+                    active === i ? "var(--foreground)" : "var(--secondary)",
+                  color:
+                    active === i
+                      ? "var(--background)"
+                      : "var(--muted-foreground)",
+                }}
+                className="text-xs px-4 py-2 rounded-sm transition-all duration-200 hover:opacity-90 border-none shrink-0 font-mono"
+              >
+                {p.title}
+              </button>
+            );
+          })}
         </div>
 
         {PROJECTS.map((project, i) =>
@@ -114,20 +108,14 @@ function Projects() {
                   </div>
                   <a
                     href={project.url}
-                    className="text-lg mt-1 hover:opacity-70 transition-opacity text-accent font-mono"
+                    className="text-xs mt-1 hover:opacity-70 transition-opacity text-accent font-mono"
                     aria-label={`View ${project.title}`}
                   >
-                    ↗
+                    View site <span className="text-lg">↗</span>
                   </a>
                 </div>
 
-                <p
-                  style={{
-                    color: "var(--muted-foreground)",
-                    fontFamily: "var(--font-sans)",
-                  }}
-                  className="text-sm leading-relaxed font-light"
-                >
+                <p className="text-sm leading-relaxed font-light font-sans text-muted-foreground">
                   {project.description}
                 </p>
 

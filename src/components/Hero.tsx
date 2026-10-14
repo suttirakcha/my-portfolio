@@ -17,9 +17,9 @@ function Hero() {
           </em>
           <br />
           <span className="text-4xl md:text-5xl text-secondary-foreground">
-            Full-Stack{" "}
+            Frontend{" "}
           </span>
-          <span className="text-4xl md:text-5xl">Web Developer</span>
+          <span className="text-4xl md:text-5xl">Developer</span>
         </h1>
 
         <p className="text-muted-foreground font-sans text-base leading-relaxed font-light">

@@ -1,5 +1,13 @@
 const CERTIFICATIONS = [
   {
+    title: "Frontend Development Libraries",
+    issuer: "freeCodeCamp",
+    date: "Oct 2026",
+    id: "-",
+    icon: "⬡",
+    link: "https://www.freecodecamp.org/certification/marksuttirak/front-end-development-libraries-v9",
+  },
+  {
     title: "Learn Next.js Course",
     issuer: "Codecademy",
     date: "Apr 2026",
@@ -22,14 +30,6 @@ const CERTIFICATIONS = [
     id: "UC-ec476bd1-fcab-413d-b671-500f47520dfb",
     icon: "◈",
     link: "https://www.udemy.com/certificate/UC-ec476bd1-fcab-413d-b671-500f47520dfb/",
-  },
-  {
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    date: "Mar 2021",
-    id: "-",
-    icon: "⬡",
-    link: "https://www.freecodecamp.org/certification/marksuttirak/responsive-web-design",
   },
 ];
 
